@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="assets/logo.svg" alt="Logo Alura Latam">
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__cifrado">
+            <div class="encriptador__cifrado__cajatexto">
+                <textarea placeholder="Ingrese el texto aquí" class="cajatexto"></textarea>
+            </div>
+            <div class="encriptador__cifrado__alerta">
+                <img src="assets/alerta.svg" alt="Alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador__cifrado__botones">
+                <input type="button" class="boton__encriptar" value="Encriptar">
+                <input type="button" class="boton__desencriptar" value="Desencriptar">
+            </div>
+        </section>
+        <section class="encriptador__descifrado">
+            <div class="encriptador__descifrado__muneco" id="encriptador__descifrado__muneco">
+                <img src="assets/muneco.svg" alt="Muñeco">
+            </div>
+            <div class="encriptador__descifrado__texto" id="encriptador__descifrado__texto">
+                <h3>Ningún mensaje fue <br>encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+            </div>
+            <div class="encriptador__descifrado__resultado">
+                <p class="resultado__texto"></p>
+            </div>
+            <div class="encriptador__descifrado__botones" id="encriptador__cifrado__botones">
+                <input type="button" class="boton__copiar" value="Copiar">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
